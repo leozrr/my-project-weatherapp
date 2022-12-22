@@ -32,7 +32,7 @@ let months = [
 let month = months[now.getMonth()];
 
 let h2 = document.querySelector("h2");
-h2.innerHTML = `${month} ${date}, ${year}`;
+h2.innerHTML = `${month} ${date}`;
 
 let h3 = document.querySelector("h3");
 h3.innerHTML = `${day}, ${hour}:${minute}`;
@@ -58,6 +58,12 @@ function displayWeatherCondition(response) {
     response.data.main.temp
   )}°C`;
   document.querySelector("#description").innerHTML = response.data.weather.main;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {
@@ -90,4 +96,4 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#basic-addon3");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("Zurich, Switzerland");
+searchCity("Zurich");

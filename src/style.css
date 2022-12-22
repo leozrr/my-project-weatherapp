@@ -57,9 +57,9 @@ h1 {
 .temperatureValue {
   font-size: 45px;
 }
-.currentWeather-icon {
-  font-size: 120px;
-  margin-top: 5px;
+#icon {
+  width: 60%;
+  margin-top: 15px;
 }
 .text-temperature {
   font-size: 15px;
