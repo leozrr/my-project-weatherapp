@@ -1,4 +1,4 @@
-// Current Date and Time
+// Current Date and Time old one
 
 function formatDate(date) {
   let hours = date.getHours();
