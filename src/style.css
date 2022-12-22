@@ -24,7 +24,7 @@ body {
   margin-bottom: 20px;
 }
 .location {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 h1 {
   font-size: 50px;
@@ -77,5 +77,8 @@ h1 {
   font-size: 12px;
   margin-top: 15px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+small{
+  margin-left: -14px;
 }
