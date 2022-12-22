@@ -1,0 +1,67 @@
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #43464b;
+}
+.search-form {
+  margin-left: 110px;
+  margin-top: 20px;
+  padding-top: 10px;
+  width: 500px;
+}
+.col-6 {
+  margin-bottom: 50px;
+}
+.location {
+  margin-top: 60px;
+}
+h1 {
+  font-size: 50px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+.h2 {
+  font-size: 25px;
+  font-weight: 120;
+  margin-top: -3px;
+}
+.h3 {
+  font-size: 15px;
+  font-weight: 100;
+  margin-top: -20px;
+}
+.currentWeather {
+  text-align: center;
+  margin-top: 48px;
+  margin-left: 45px;
+}
+.vl {
+  border-left: 1px solid black;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  margin-left: 20px;
+  top: 150px;
+}
+.temperatureValue {
+  font-size: 45px;
+}
+.currentWeather-icon {
+  font-size: 120px;
+  margin-top: 10px;
+}
+.text-temperature {
+  font-size: 15px;
+  margin-top: -20px;
+}
+.dates {
+  text-align: center;
+}
+.weather-icons {
+  margin-top: 10px;
+  text-align: center;
+}
+.temperature-day-night {
+  font-size: 12px;
+  margin-top: 15px;
+  text-align: center;
+}
