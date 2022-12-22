@@ -1,30 +1,5 @@
 // Current Date and Time old one
 
-function formatDate(date) {
-  let hours = date.getHours();
-  if (hours < 10) {
-    hours = `0${hours}`;
-  }
-  let minutes = date.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-
-  let dayIndex = date.getDay();
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let day = days[dayIndex];
-
-  return `${day} ${hours}:${minutes}`;
-}
-
 let now = new Date();
 let minute = now.getMinutes();
 let hour = now.getHours();
@@ -65,10 +40,11 @@ h3.innerHTML = `${day}, ${hour}:${minute}`;
 // Change city according to form input
 function city(event) {
   event.preventDefault();
-  let searchInput = document.querySelector("#search-text-input");
-
+  let input = document.querySelector("#search-text-input");
   let h1 = document.querySelector("h1");
-  h1.innerHTML = searchInput.value;
+  let capitalizeCity =
+    input.value.charAt(0).toUpperCase() + input.value.slice(1);
+  h1.innerHTML = `${capitalizeCity}`;
 }
 
 let searchButton = document.querySelector("#basic-addon2");
@@ -78,9 +54,9 @@ let searchButton = document.querySelector("#basic-addon2");
 
 function displayWeatherCondition(response) {
   document.querySelector("#current-city").innerHTML = response.data.name;
-  document.querySelector("#temperature-value").innerHTML = Math.round(
+  document.querySelector("#temperature-value").innerHTML = `${Math.round(
     response.data.main.temp
-  );
+  )}°C`;
   document.querySelector("#description").innerHTML = response.data.weather.main;
 }
 
@@ -114,4 +90,4 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#basic-addon3");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-searchCity("London");
+searchCity("Zurich, Switzerland");

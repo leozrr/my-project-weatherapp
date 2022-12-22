@@ -4,6 +4,9 @@ body {
 }
 .container {
   border: 0.5px solid #43464b;
+  max-width: 700px;
+  max-height: 500px;
+  margin: 0 auto; 
 }
 .search-form {
   margin-left: 110px;
@@ -11,11 +14,17 @@ body {
   padding-top: 10px;
   width: 500px;
 }
+#basic-addon2{
+  margin-left: -20px;
+}
+#basic-addon3{
+  margin-left: -50px;
+}
 .col-6 {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 .location {
-  margin-top: 60px;
+  margin-top: 40px;
 }
 h1 {
   font-size: 50px;
@@ -34,23 +43,23 @@ h1 {
 }
 .currentWeather {
   text-align: center;
-  margin-top: 48px;
+  margin-top: 40px;
   margin-left: 45px;
 }
 .vl {
-  border-left: 1px solid black;
+  border-left: 0.5px solid black;
   height: 200px;
   position: absolute;
   left: 50%;
   margin-left: 20px;
-  top: 150px;
+  top: 130px;
 }
 .temperatureValue {
   font-size: 45px;
 }
 .currentWeather-icon {
   font-size: 120px;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .text-temperature {
   font-size: 15px;
@@ -58,6 +67,7 @@ h1 {
 }
 .dates {
   text-align: center;
+  margin-top: 7px;
 }
 .weather-icons {
   margin-top: 10px;
@@ -67,9 +77,5 @@ h1 {
   font-size: 12px;
   margin-top: 15px;
   text-align: center;
-}
-footer {
-  margin-top: 100px;
-  font-family: "Roboto Condensed", sans-serif;
-  color: #43464b;
+  margin-bottom: 30px;
 }
