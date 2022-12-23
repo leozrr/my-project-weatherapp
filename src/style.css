@@ -7,7 +7,7 @@ body {
   border-radius: 10px;
   max-width: 700px;
   max-height: 500px;
-  margin: 30px auto; 
+  margin: 30px auto;
 }
 .search-form {
   margin-left: 110px;
@@ -15,10 +15,10 @@ body {
   padding-top: 10px;
   width: 500px;
 }
-#basic-addon2{
+#basic-addon2 {
   margin-left: -20px;
 }
-#basic-addon3{
+#basic-addon3 {
   margin-left: -50px;
 }
 .col-6 {
@@ -29,8 +29,8 @@ body {
 }
 h1 {
   font-size: 50px;
-  font-weight: 300;
-  margin-top: 15px;
+  font-weight: 400;
+  margin-top: 20px;
 }
 .h2 {
   font-size: 25px;
@@ -53,18 +53,21 @@ h1 {
   position: absolute;
   left: 50%;
   margin-left: 20px;
-  top: 130px;
+  top: 180px;
 }
 .temperatureValue {
   font-size: 45px;
 }
 #icon {
   width: 60%;
-  margin-top: 15px;
+  margin-top: 8px;
 }
 .text-temperature {
   font-size: 15px;
   margin-top: -20px;
+}
+#description {
+  color: #fff;
 }
 .dates {
   text-align: center;
@@ -78,8 +81,11 @@ h1 {
   font-size: 12px;
   margin-top: 15px;
   text-align: center;
-  margin-bottom: 70px;
+  margin-bottom: 170px;
 }
-small{
+#forecast {
+  margin-bottom: 20px;
+}
+small {
   margin-left: -14px;
 }
